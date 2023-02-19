@@ -2,16 +2,17 @@
 Various modules I use on NixOS.
 
 Note: it's not a drop-in replacement for for `/etc/nixos`. You are
-expected to import these explicitlly. Usually as:
+expected to import these explicitly. Usually as:
 
 ```nix
-# somewhere in /etc/nixos/configureation
+# somewhere in /etc/nixos/configuration.nix
 { config, pkgs, ... }:
 {
-   imports = [
-     ./aclocal.nix
-     ./include.nix
-     # ...
+  imports = [
+    ./aclocal.nix
+    ./include.nix
+    # ...
+  ];
 }
 ```
 
